@@ -42,8 +42,8 @@ require_once "throws_spam_away.class.php";
         else {
         ?>
         <?php
-	        echo "<h4>Number of all Comments : " . $c_all . " </h4>" ;
-	        echo "<h4>Number of Spam Comement : ". $s_count . "</h4>";
+	        echo "<h4>".__( 'Number of all Comments', ThrowsSpamAway::DOMAIN )." : " . $c_all . " </h4>" ;
+	        echo "<h4>".__( 'Number of Spam Comement', ThrowsSpamAway::DOMAIN )." : ". $s_count . "</h4>";
 	        ?>
 
         <?php if($c_all > 0) { ?>
@@ -52,7 +52,7 @@ require_once "throws_spam_away.class.php";
 	            <input type="radio" name="all" value="s" /> Delete all spam comments<br>
 	            <input type="radio" name="all" value="a" /> Delete all comments<br>
                 <p class="submit">
-		            <input type="submit" name="Submit" value="Delete all Comments" />
+		            <input type="submit" name="Submit" value="<?php _e( 'Delete all Comments', ThrowsSpamAway::DOMAIN ); ?>" />
                 </p>
             </form>
         <?php
@@ -74,7 +74,7 @@ require_once "throws_spam_away.class.php";
         }
         else {
         ?>
-        <?php echo "<h4>Number of Pending Comments : " . $c_pend . " </h4>" ; ?>
+        <?php echo "<h4>".__( 'Number of Pending Comments', ThrowsSpamAway::DOMAIN )." : " . $c_pend . " </h4>" ; ?>
 
         <?php if($c_pend > 0) { ?>
             <form name="dcep" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">

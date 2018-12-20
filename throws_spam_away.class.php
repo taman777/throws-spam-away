@@ -4,7 +4,7 @@
  *
  * <p>ThrowsSpamAway</p> Class
  * WordPress's Plugin
- * @author Takeshi Satoh@GTI Inc. 2017
+ * @author Takeshi Satoh@GTI Inc. 2018
  * @version 3.0
  */
 class ThrowsSpamAway {
